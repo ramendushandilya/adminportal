@@ -16,7 +16,7 @@ public class CartItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private int quantity;
+    private int qty;
     private BigDecimal subtotal;
 
     @OneToOne
@@ -42,12 +42,12 @@ public class CartItem {
         this.id = id;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public int getQty() {
+        return qty;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setQty(int qty) {
+        this.qty = qty;
     }
 
     public BigDecimal getSubtotal() {
